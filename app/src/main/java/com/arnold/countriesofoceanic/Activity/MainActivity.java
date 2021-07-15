@@ -72,11 +72,23 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
             @SuppressLint("StaticFieldLeak")
             class Count extends AsyncTask<Void, Void, List<Country>> {
                 int a;
+                int b;
 
                 @Override
                 protected List<Country> doInBackground(Void... voids) {
                     a = CountryDatabase.getCountryDatabase(getApplicationContext()).countryDao().getDataCount();
                     if (a == 27) {
+                        b = 0;
+                    } else {
+                        b = 1;
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(List<Country> countries) {
+                    super.onPostExecute(countries);
+                    if (b == 0) {
                         Display();
                     } else {
                         @SuppressLint("StaticFieldLeak")
@@ -98,15 +110,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
                             }
                         }
                         new Delete().execute();
-
                     }
-                    return null;
-                }
-
-                @Override
-                protected void onPostExecute(List<Country> countries) {
-                    super.onPostExecute(countries);
-
                 }
             }
             new Count().execute();
@@ -114,11 +118,23 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
             @SuppressLint("StaticFieldLeak")
             class Count extends AsyncTask<Void, Void, List<Country>> {
                 int a;
+                int b;
 
                 @Override
                 protected List<Country> doInBackground(Void... voids) {
                     a = CountryDatabase.getCountryDatabase(getApplicationContext()).countryDao().getDataCount();
                     if (a == 27) {
+                        b = 0;
+                    } else {
+                        b = 1;
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(List<Country> countries) {
+                    super.onPostExecute(countries);
+                    if (b == 0) {
                         Display();
                     } else {
                         @SuppressLint("StaticFieldLeak")
@@ -140,15 +156,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
                             }
                         }
                         new Delete().execute();
-
                     }
-                    return null;
-                }
-
-                @Override
-                protected void onPostExecute(List<Country> countries) {
-                    super.onPostExecute(countries);
-
                 }
             }
             new Count().execute();
@@ -198,10 +206,10 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
                             JSONObject details = movies.getJSONObject(j);
                             String title = details.getString("name");
                             String title2 = details.getString("nativeName");
-                            languages += title+" : "+title2 + " ,\n";
+                            languages += title + " : " + title2 + " ,\n";
                         }
-                        languages = languages.replaceAll("null","");
-                        languages = languages.substring(0,languages.length() - 2);
+                        languages = languages.replaceAll("null", "");
+                        languages = languages.substring(0, languages.length() - 2);
                         flag = cityInfo.getString("flag");
                         Country country = new Country();
                         country.setName(countryName);
@@ -298,7 +306,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
     }
 
     //method for deleting all the data from the room database
-    public void DeletingData(){
+    public void DeletingData() {
         class Delete extends AsyncTask<Void, Void, List<Country>> {
             @Override
             protected List<Country> doInBackground(Void... voids) {
