@@ -1,11 +1,11 @@
-package com.arnold.countriesofoceanic.JavaClasses;
+package com.arnoldvaz27.countriesofoceanic.JavaClasses;
 
 import android.content.Context;
 import android.net.Uri;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.arnold.countriesofoceanic.R;
+import com.arnoldvaz27.countriesofoceanic.Activity.R;
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYouListener;
 

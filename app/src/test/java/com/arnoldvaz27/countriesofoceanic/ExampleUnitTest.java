@@ -1,4 +1,4 @@
-package com.arnold.countriesofoceanic;
+package com.arnoldvaz27.countriesofoceanic;
 
 import org.junit.Test;
 

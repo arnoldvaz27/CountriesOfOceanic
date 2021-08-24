@@ -1,6 +1,6 @@
-package com.arnold.countriesofoceanic.listeners;
+package com.arnoldvaz27.countriesofoceanic.listeners;
 
-import com.arnold.countriesofoceanic.entites.Country;
+import com.arnoldvaz27.countriesofoceanic.entites.Country;
 
 public interface CountryListeners {
 

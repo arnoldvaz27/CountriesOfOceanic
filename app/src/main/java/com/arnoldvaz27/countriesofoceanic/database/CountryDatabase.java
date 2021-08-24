@@ -1,4 +1,4 @@
-package com.arnold.countriesofoceanic.database;
+package com.arnoldvaz27.countriesofoceanic.database;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.arnold.countriesofoceanic.dao.CountryDao;
-import com.arnold.countriesofoceanic.entites.Country;
+import com.arnoldvaz27.countriesofoceanic.dao.CountryDao;
+import com.arnoldvaz27.countriesofoceanic.entites.Country;
 
 //defining the country database is done below
 @Database(entities = Country.class, version = 1,exportSchema = false)

@@ -1,4 +1,4 @@
-package com.arnold.countriesofoceanic.Adapter;
+package com.arnoldvaz27.countriesofoceanic.Adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.arnold.countriesofoceanic.R;
-import com.arnold.countriesofoceanic.JavaClasses.ImageFetch;
-import com.arnold.countriesofoceanic.entites.Country;
-import com.arnold.countriesofoceanic.listeners.CountryListeners;
+import com.arnoldvaz27.countriesofoceanic.Activity.R;
+import com.arnoldvaz27.countriesofoceanic.JavaClasses.ImageFetch;
+import com.arnoldvaz27.countriesofoceanic.entites.Country;
+import com.arnoldvaz27.countriesofoceanic.listeners.CountryListeners;
 
 import java.util.List;
 
